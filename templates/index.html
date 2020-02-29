@@ -6,6 +6,38 @@
     <title>音声合成</title>
 </head>
 <body>
-    <h1>Voice Text音声合成</h1>
+	<h1>Voice Text音声合成</h1>
+	<div id="debug">
+		<div v-if="info">
+			<p>APIキー：{{ getApiKey }}</p>
+			<p>入力テキスト：{{ getText }}</p>
+			<p>音声エンジン：{{ getVoice }}</p>
+		</div>
+	</div>
+	<form action="/" method="POST">
+		<div>
+			<span>APIキー：</span>
+			<span><input type="text" name="apiKey"></span>
+		</div>
+		<div>
+			<span>テキスト：</span>
+			<span><input type="text" name="setText"></span>
+		</div>
+		<div>
+			<span>音声エンジン：</span>
+			<select name="setVoice">
+				<option value="null" disabled selected>選択して下さい</option>
+				<option value="show">ショウ</option>
+				<option value="haruka">ハルカ</option>
+				<option value="hikari">ヒカリ</option>
+				<option value="takeru">タケル</option>
+				<option value="santa">サンタ</option>
+				<option value="bear">クマ</option>
+			</select>
+		</div>
+        <div>
+            <input type="submit" value="送信">
+        </div>
+    </form>
 </body>
 </html>
