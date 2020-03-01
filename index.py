@@ -11,7 +11,7 @@ def post():
 	key = request.form['apiKey']
 	text = request.form['setText']
 	voice = request.form['setVoice']
-	return render_template('index.html', getApiKey = key, getText = text, getVoice = voice)
+	return render_template('result.html', getApiKey = key, getText = text, getVoice = voice)
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", debug=True)
