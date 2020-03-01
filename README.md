@@ -1,4 +1,4 @@
-# HOYAのVoice Text Web APIを使用した音声合成アプリ.
+# HOYAのVoice Text Web APIを使用した音声合成アプリ
 
 ## 使い方
 ### APIキーを入手する
