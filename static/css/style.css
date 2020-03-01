@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body {
+	width: 90%;
+	margin: auto;
+	font-family: 'Yu Gothic', 'Hiragino kaku Gothic Pro', sans-serif;
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, #sendBtn, #result, #back {
+	text-align: center;
+}
+
+#index-form div {
+	padding: 10px;
+}
+
+.input-box, #voice, #send {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+#text {
+	width: 50%;
+}
+
+#voice, #send {
+	border: none;
+}

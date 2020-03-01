@@ -2,35 +2,38 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/css/style.css">
     <title>音声合成</title>
 </head>
 <body>
 	<h1>Voice Text音声合成</h1>
-	<form action="/" method="POST">
-		<div>
-			<span>APIキー：</span>
-			<span><input type="text" name="apiKey"></span>
-		</div>
-		<div>
-			<span>テキスト：</span>
-			<span><input type="text" name="setText"></span>
-		</div>
-		<div>
-			<span>音声エンジン：</span>
-			<select name="setVoice">
-				<option value="null" disabled selected>選択して下さい</option>
-				<option value="show">ショウ</option>
-				<option value="haruka">ハルカ</option>
-				<option value="hikari">ヒカリ</option>
-				<option value="takeru">タケル</option>
-				<option value="santa">サンタ</option>
-				<option value="bear">クマ</option>
-			</select>
-		</div>
-        <div>
-            <input type="submit" value="送信">
-        </div>
-    </form>
+	<div id="index-form">
+		<form action="/" method="POST">
+			<div>
+				<span>APIキー：</span>
+				<span><input type="text" name="apiKey" class="input-box"></span>
+			</div>
+			<div>
+				<span>テキスト：</span>
+				<span><input type="text" name="setText" class="input-box" id="text"></span>
+			</div>
+			<div>
+				<span>音声エンジン：</span>
+				<select name="setVoice" id="voice">
+					<option value="null" disabled selected>選択して下さい</option>
+					<option value="show">ショウ</option>
+					<option value="haruka">ハルカ</option>
+					<option value="hikari">ヒカリ</option>
+					<option value="takeru">タケル</option>
+					<option value="santa">サンタ</option>
+					<option value="bear">クマ</option>
+				</select>
+			</div>
+			<div id="sendBtn">
+				<input type="submit" value="送信" id="send">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
