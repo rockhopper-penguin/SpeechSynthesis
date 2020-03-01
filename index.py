@@ -10,7 +10,7 @@ def getVoice(key, text, voice):
 		'speaker': voice
 	}
 	send = requests.post(adress, params = Parameters, auth = (key,''))
-	result = open("result/result.wav", 'wb')
+	result = open("static/result/result.wav", 'wb')
 	result.write(send.content)
 	result.close()
 
