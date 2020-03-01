@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音声合成</title>
+</head>
+<body>
+	<h1>Voice Text音声合成</h1>
+	<div id="debug">
+		<div v-if="info">
+			<p>APIキー：{{ getApiKey }}</p>
+			<p>入力テキスト：{{ getText }}</p>
+			<p>音声エンジン：{{ getVoice }}</p>
+		</div>
+	</div>
+</body>
+</html>
