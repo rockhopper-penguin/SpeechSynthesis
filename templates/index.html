@@ -53,6 +53,13 @@
 					<output id="feedbackPitch">100</output>
 				</span>
 			</div>
+			<div>
+				<span>スピード：</span>
+				<span>
+					<input type="range" name="setSpeed" value="100" min="50" max="400" step="1" oninput="document.getElementById('feedbackSpeed').value=this.value">
+					<output id="feedbackSpeed">100</output>
+				</span>
+			</div>
 			<div id="sendBtn">
 				<input type="submit" value="送信" id="send">
 			</div>
