@@ -60,6 +60,13 @@
 					<output id="feedbackSpeed">100</output>
 				</span>
 			</div>
+			<div>
+				<span>ボリューム：</span>
+				<span>
+					<input type="range" name="setVolume" value="100" min="50" max="200" step="1" oninput="document.getElementById('feedbackVolume').value=this.value">
+					<output id="feedbackVolume">100</output>
+				</span>
+			</div>
 			<div id="sendBtn">
 				<input type="submit" value="送信" id="send">
 			</div>

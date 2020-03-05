@@ -4,14 +4,15 @@ import requests
 
 adress = 'https://api.voicetext.jp/v1/tts'
 
-def getVoice(key, text, voice, emotion, emotion_level, pitch, speed):
+def getVoice(key, text, voice, emotion, emotion_level, pitch, speed, volume):
 	Parameters = {
 		'text': text,
 		'speaker': voice,
 		'emotion':emotion,
 		'emotion_level': emotion_level,
 		'pitch': pitch,
-		'speed': speed
+		'speed': speed,
+		'volume': volume
 	}
 	send = requests.post(adress, params = Parameters, auth = (key,''))
 	result = open("static/result/result.wav", 'wb')
@@ -33,7 +34,8 @@ def post():
 	emotion_level = request.form['setEmotionLevel']
 	pitch = request.form['setPitch']
 	speed = request.form['setSpeed']
-	getVoice(key, text, voice, emotion, emotion_level, pitch, speed)
+	volume = request.form['setVolume']
+	getVoice(key, text, voice, emotion, emotion_level, pitch, speed, volume)
 	return render_template('result.html')
 
 if __name__ == "__main__":
