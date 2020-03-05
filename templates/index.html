@@ -46,6 +46,13 @@
 					<output id="feedbackEmotionLevel">2</output>
 				</span>
 			</div>
+			<div>
+				<span>ピッチ：</span>
+				<span>
+					<input type="range" name="setPitch" value="100" min="50" max="200" step="1" oninput="document.getElementById('feedbackPitch').value=this.value">
+					<output id="feedbackPitch">100</output>
+				</span>
+			</div>
 			<div id="sendBtn">
 				<input type="submit" value="送信" id="send">
 			</div>
